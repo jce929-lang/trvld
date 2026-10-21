@@ -9,10 +9,17 @@
 
 * { box-sizing: border-box; }
 
+/* The base color lives on html so Safari's overscroll, status bar and toolbar areas match the page. */
+html {
+  background: var(--bg-deep);
+  color-scheme: dark;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
-  background: radial-gradient(ellipse at top, var(--bg), var(--bg-deep) 70%) fixed;
+  min-height: 100dvh;
+  background: radial-gradient(ellipse at top, var(--bg), var(--bg-deep) 70%) no-repeat;
   color: var(--text);
   font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
 }
