@@ -67,3 +67,24 @@ footer {
   flex-wrap: wrap;
 }
 footer a { color: var(--muted); }
+
+.stores { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.store {
+  display: flex;
+  flex-direction: column;
+  min-width: 170px;
+  padding: 8px 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: #000;
+  color: var(--text);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.15;
+  text-decoration: none;
+}
+.store small { font-size: 12px; font-weight: 400; }
+.store:hover { border-color: var(--accent); }
+.store.soon { opacity: 0.55; }
+.store.soon:hover { border-color: rgba(255, 255, 255, 0.35); }
+p.free { text-align: center; color: var(--muted); margin: 12px 0 0; }
